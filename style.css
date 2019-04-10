@@ -29,7 +29,6 @@
 }
 
 
-
 /* Float ile verdiğimiz değerlerin alanları boş kaldığından diğer divler o bölgeye yerleşiyor. Bunu engellemek için clear:both komutunu kullanıyoruz. */
 .duzelt {
   clear:both;
@@ -39,6 +38,18 @@
 #ortala {
   margin: 0 auto;
   width:800px;
+}/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Üst kısmın sabitlenmesi ve diğer ayarlayını yapıyoruz. */
@@ -51,3 +62,54 @@
   color: #FFF;
 }
 
+#aramakutusu { /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ width:307px; height:50px;
+background:url("aramakutusu.png");
+text-align:left; float:right;
+}
+#aramakutusu #AKutu {
+ margin-top:10px; margin-left:15px; 
+ width:230px; padding:5px; 
+ background:transparent; 
+ outline:none; border:none;
+}
+#aramakutusu #AButon {
+ width:30px; padding:5px; 
+ background:transparent; 
+ outline:none; text-indent:-9999px; 
+ border:none;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
